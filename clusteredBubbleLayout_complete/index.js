@@ -62,7 +62,7 @@ d3.csv('./banks.csv', function(banks){
 
     var forceCollide = d3.forceCollide()
         .radius(function(d) { return radiusScale(d.assets) + 1.5; })
-        .iterations(1);
+        .iterations(1); //higher number takes longer to calculate
 
     //d3.forceSimulation(nodeData).alphaDecay(0.03).force("attractForce",attractForce).
 
